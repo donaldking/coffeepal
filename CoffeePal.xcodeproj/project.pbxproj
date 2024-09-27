@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		630DA0B22CA6D47500F33C3F /* CoffeePalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630DA0B12CA6D47500F33C3F /* CoffeePalApp.swift */; };
+		630DA0B42CA6D47500F33C3F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630DA0B32CA6D47500F33C3F /* ContentView.swift */; };
+		630DA0B62CA6D47800F33C3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 630DA0B52CA6D47800F33C3F /* Assets.xcassets */; };
+		630DA0B92CA6D47800F33C3F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 630DA0B82CA6D47800F33C3F /* Preview Assets.xcassets */; };
+		630DA0C32CA6D47900F33C3F /* CoffeePalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630DA0C22CA6D47900F33C3F /* CoffeePalTests.swift */; };
+		630DA0CD2CA6D47900F33C3F /* CoffeePalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630DA0CC2CA6D47900F33C3F /* CoffeePalUITests.swift */; };
+		630DA0CF2CA6D47900F33C3F /* CoffeePalUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630DA0CE2CA6D47900F33C3F /* CoffeePalUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		630DA0BF2CA6D47900F33C3F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 630DA0A62CA6D47500F33C3F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 630DA0AD2CA6D47500F33C3F;
+			remoteInfo = CoffeePal;
+		};
+		630DA0C92CA6D47900F33C3F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 630DA0A62CA6D47500F33C3F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 630DA0AD2CA6D47500F33C3F;
+			remoteInfo = CoffeePal;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		630DA0AE2CA6D47500F33C3F /* CoffeePal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeePal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		630DA0B12CA6D47500F33C3F /* CoffeePalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeePalApp.swift; sourceTree = "<group>"; };
+		630DA0B32CA6D47500F33C3F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		630DA0B52CA6D47800F33C3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		630DA0B82CA6D47800F33C3F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		630DA0BE2CA6D47900F33C3F /* CoffeePalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoffeePalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		630DA0C22CA6D47900F33C3F /* CoffeePalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeePalTests.swift; sourceTree = "<group>"; };
+		630DA0C82CA6D47900F33C3F /* CoffeePalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoffeePalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		630DA0CC2CA6D47900F33C3F /* CoffeePalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeePalUITests.swift; sourceTree = "<group>"; };
+		630DA0CE2CA6D47900F33C3F /* CoffeePalUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeePalUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		630DA0AB2CA6D47500F33C3F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		630DA0BB2CA6D47900F33C3F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		630DA0C52CA6D47900F33C3F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		630DA0A52CA6D47500F33C3F = {
+			isa = PBXGroup;
+			children = (
+				630DA0B02CA6D47500F33C3F /* CoffeePal */,
+				630DA0C12CA6D47900F33C3F /* CoffeePalTests */,
+				630DA0CB2CA6D47900F33C3F /* CoffeePalUITests */,
+				630DA0AF2CA6D47500F33C3F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		630DA0AF2CA6D47500F33C3F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				630DA0AE2CA6D47500F33C3F /* CoffeePal.app */,
+				630DA0BE2CA6D47900F33C3F /* CoffeePalTests.xctest */,
+				630DA0C82CA6D47900F33C3F /* CoffeePalUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		630DA0B02CA6D47500F33C3F /* CoffeePal */ = {
+			isa = PBXGroup;
+			children = (
+				630DA0B12CA6D47500F33C3F /* CoffeePalApp.swift */,
+				630DA0B32CA6D47500F33C3F /* ContentView.swift */,
+				630DA0B52CA6D47800F33C3F /* Assets.xcassets */,
+				630DA0B72CA6D47800F33C3F /* Preview Content */,
+			);
+			path = CoffeePal;
+			sourceTree = "<group>";
+		};
+		630DA0B72CA6D47800F33C3F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				630DA0B82CA6D47800F33C3F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		630DA0C12CA6D47900F33C3F /* CoffeePalTests */ = {
+			isa = PBXGroup;
+			children = (
+				630DA0C22CA6D47900F33C3F /* CoffeePalTests.swift */,
+			);
+			path = CoffeePalTests;
+			sourceTree = "<group>";
+		};
+		630DA0CB2CA6D47900F33C3F /* CoffeePalUITests */ = {
+			isa = PBXGroup;
+			children = (
+				630DA0CC2CA6D47900F33C3F /* CoffeePalUITests.swift */,
+				630DA0CE2CA6D47900F33C3F /* CoffeePalUITestsLaunchTests.swift */,
+			);
+			path = CoffeePalUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		630DA0AD2CA6D47500F33C3F /* CoffeePal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 630DA0D22CA6D47900F33C3F /* Build configuration list for PBXNativeTarget "CoffeePal" */;
+			buildPhases = (
+				630DA0AA2CA6D47500F33C3F /* Sources */,
+				630DA0AB2CA6D47500F33C3F /* Frameworks */,
+				630DA0AC2CA6D47500F33C3F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoffeePal;
+			productName = CoffeePal;
+			productReference = 630DA0AE2CA6D47500F33C3F /* CoffeePal.app */;
+			productType = "com.apple.product-type.application";
+		};
+		630DA0BD2CA6D47900F33C3F /* CoffeePalTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 630DA0D52CA6D47900F33C3F /* Build configuration list for PBXNativeTarget "CoffeePalTests" */;
+			buildPhases = (
+				630DA0BA2CA6D47900F33C3F /* Sources */,
+				630DA0BB2CA6D47900F33C3F /* Frameworks */,
+				630DA0BC2CA6D47900F33C3F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				630DA0C02CA6D47900F33C3F /* PBXTargetDependency */,
+			);
+			name = CoffeePalTests;
+			productName = CoffeePalTests;
+			productReference = 630DA0BE2CA6D47900F33C3F /* CoffeePalTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		630DA0C72CA6D47900F33C3F /* CoffeePalUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 630DA0D82CA6D47900F33C3F /* Build configuration list for PBXNativeTarget "CoffeePalUITests" */;
+			buildPhases = (
+				630DA0C42CA6D47900F33C3F /* Sources */,
+				630DA0C52CA6D47900F33C3F /* Frameworks */,
+				630DA0C62CA6D47900F33C3F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				630DA0CA2CA6D47900F33C3F /* PBXTargetDependency */,
+			);
+			name = CoffeePalUITests;
+			productName = CoffeePalUITests;
+			productReference = 630DA0C82CA6D47900F33C3F /* CoffeePalUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		630DA0A62CA6D47500F33C3F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					630DA0AD2CA6D47500F33C3F = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					630DA0BD2CA6D47900F33C3F = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 630DA0AD2CA6D47500F33C3F;
+					};
+					630DA0C72CA6D47900F33C3F = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 630DA0AD2CA6D47500F33C3F;
+					};
+				};
+			};
+			buildConfigurationList = 630DA0A92CA6D47500F33C3F /* Build configuration list for PBXProject "CoffeePal" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 630DA0A52CA6D47500F33C3F;
+			productRefGroup = 630DA0AF2CA6D47500F33C3F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				630DA0AD2CA6D47500F33C3F /* CoffeePal */,
+				630DA0BD2CA6D47900F33C3F /* CoffeePalTests */,
+				630DA0C72CA6D47900F33C3F /* CoffeePalUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		630DA0AC2CA6D47500F33C3F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				630DA0B92CA6D47800F33C3F /* Preview Assets.xcassets in Resources */,
+				630DA0B62CA6D47800F33C3F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		630DA0BC2CA6D47900F33C3F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		630DA0C62CA6D47900F33C3F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		630DA0AA2CA6D47500F33C3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				630DA0B42CA6D47500F33C3F /* ContentView.swift in Sources */,
+				630DA0B22CA6D47500F33C3F /* CoffeePalApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		630DA0BA2CA6D47900F33C3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				630DA0C32CA6D47900F33C3F /* CoffeePalTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		630DA0C42CA6D47900F33C3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				630DA0CF2CA6D47900F33C3F /* CoffeePalUITestsLaunchTests.swift in Sources */,
+				630DA0CD2CA6D47900F33C3F /* CoffeePalUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		630DA0C02CA6D47900F33C3F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 630DA0AD2CA6D47500F33C3F /* CoffeePal */;
+			targetProxy = 630DA0BF2CA6D47900F33C3F /* PBXContainerItemProxy */;
+		};
+		630DA0CA2CA6D47900F33C3F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 630DA0AD2CA6D47500F33C3F /* CoffeePal */;
+			targetProxy = 630DA0C92CA6D47900F33C3F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		630DA0D02CA6D47900F33C3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		630DA0D12CA6D47900F33C3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		630DA0D32CA6D47900F33C3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CoffeePal/Preview Content\"";
+				DEVELOPMENT_TEAM = NJ84NK936W;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tusksolutions.CoffeePal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		630DA0D42CA6D47900F33C3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CoffeePal/Preview Content\"";
+				DEVELOPMENT_TEAM = NJ84NK936W;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tusksolutions.CoffeePal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		630DA0D62CA6D47900F33C3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NJ84NK936W;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tusksolutions.CoffeePalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoffeePal.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CoffeePal";
+			};
+			name = Debug;
+		};
+		630DA0D72CA6D47900F33C3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NJ84NK936W;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tusksolutions.CoffeePalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoffeePal.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CoffeePal";
+			};
+			name = Release;
+		};
+		630DA0D92CA6D47900F33C3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NJ84NK936W;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tusksolutions.CoffeePalUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CoffeePal;
+			};
+			name = Debug;
+		};
+		630DA0DA2CA6D47900F33C3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NJ84NK936W;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tusksolutions.CoffeePalUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CoffeePal;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		630DA0A92CA6D47500F33C3F /* Build configuration list for PBXProject "CoffeePal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				630DA0D02CA6D47900F33C3F /* Debug */,
+				630DA0D12CA6D47900F33C3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		630DA0D22CA6D47900F33C3F /* Build configuration list for PBXNativeTarget "CoffeePal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				630DA0D32CA6D47900F33C3F /* Debug */,
+				630DA0D42CA6D47900F33C3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		630DA0D52CA6D47900F33C3F /* Build configuration list for PBXNativeTarget "CoffeePalTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				630DA0D62CA6D47900F33C3F /* Debug */,
+				630DA0D72CA6D47900F33C3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		630DA0D82CA6D47900F33C3F /* Build configuration list for PBXNativeTarget "CoffeePalUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				630DA0D92CA6D47900F33C3F /* Debug */,
+				630DA0DA2CA6D47900F33C3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 630DA0A62CA6D47500F33C3F /* Project object */;
+}
