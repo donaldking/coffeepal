@@ -1,0 +1,20 @@
+//
+//  Common.xcconfig
+//  CoffeePal
+//
+//  Created by Mac User on 27/09/2024.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+// Helpful articles
+// 1. Managing different iOS build configurations in Xcode
+// https://tanaschita.com/20220214-managing-different-ios-environments-in-xcode/
+
+// 2. Working with Xcode configuration files
+// https://tanaschita.com/20220221-xcode-configuration-files/
+
+BUNDLE_IDENTIFIER = com.tusksolutions.CoffeePal
+CT_APP_ICON_NAME = AppIcon
+API_URL = https:/$()/island-bramble.glitch.me

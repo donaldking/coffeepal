@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct CoffeePalApp: App {
+    @State private var orderAggregate = OrderAggregate.shared
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            OrderListScreen()
+                .environment(orderAggregate)
         }
     }
 }

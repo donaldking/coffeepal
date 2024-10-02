@@ -1,0 +1,31 @@
+{
+  "configurations" : [
+    {
+      "id" : "E4FBFE85-5BEE-459C-8A32-56FDE83BA9D5",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "testTimeoutsEnabled" : true
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:CoffeePal.xcodeproj",
+        "identifier" : "630DA0BD2CA6D47900F33C3F",
+        "name" : "CoffeePalTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:CoffeePal.xcodeproj",
+        "identifier" : "630DA0C72CA6D47900F33C3F",
+        "name" : "CoffeePalUITests"
+      }
+    }
+  ],
+  "version" : 1
+}

@@ -1,0 +1,15 @@
+//
+//  Dev.xcconfig
+//  CoffeePal
+//
+//  Created by Mac User on 27/09/2024.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+#include "Common.xcconfig"
+
+BUNDLE_IDENTIFIER = $(inherited).debug
+CT_APP_ICON_NAME = $(inherited)-Dev
+API_URL = $(inherited)/test
