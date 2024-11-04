@@ -10,13 +10,17 @@ import Foundation
 struct GetOrderUseCase: Sendable {
     private var orderRepository: any OrderRepositoryProtocol
     
-    init(repository: OrderRepository = OrderRepository(), orders: [Order] = []) {
+    init(repository: some OrderRepository = OrderRepository(), orders: [Order] = []) {
         self.orderRepository = repository
     }
     
-    func execute() async throws -> [Order] {
+    func execute(fromCache cache: Bool = false) async throws -> [Order] {
         do {
-            return try await orderRepository.readAll()
+            if cache {
+                return try await orderRepository.readAll()
+            } else {
+                return try await orderRepository.fetchAll()
+            }
         } catch {
             throw error
         }

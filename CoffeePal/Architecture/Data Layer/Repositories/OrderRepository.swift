@@ -9,6 +9,7 @@ import Foundation
 
 protocol OrderRepositoryProtocol: Sendable {
     func readAll() async throws -> [Order]
+    func fetchAll() async throws -> [Order]
     func placeOrder(_ order: Order) async throws -> Order
 }
 
@@ -22,16 +23,6 @@ actor OrderRepository: OrderRepositoryProtocol {
     
     // MARK: - Public methods
     func readAll() async -> [Order] {
-        if !orderStore.isEmpty {
-            return orderStore
-        } else {
-            do {
-                let orderDtos = try await fetch()
-                orderStore = orderDtos.map { dto in Order(from: dto) }
-            } catch {
-                print("readAll error: \(error)")
-            }
-        }
         return orderStore
     }
     
@@ -47,13 +38,14 @@ actor OrderRepository: OrderRepositoryProtocol {
         }
     }
     
-    // MARK: - Private methods
-    private func fetch() async throws -> [OrderDto] {
+    // MARK: - Network requests
+    public func fetchAll() async throws -> [Order] {
         do {
-            return try await apiClient.getOrders()
+            let orderDtos = try await apiClient.getOrders()
+            orderStore = orderDtos.map { dto in Order(from: dto) }
         } catch {
-            print(error)
             throw error
         }
+        return orderStore
     }
 }

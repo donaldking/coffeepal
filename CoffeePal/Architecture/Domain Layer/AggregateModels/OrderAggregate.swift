@@ -30,11 +30,10 @@ final class OrderAggregate: @unchecked Sendable {
         self.orders = orders
     }
     
-    @MainActor
-    func populateOrders() async {
+    func fetchOrders() async {
         loadingState = .loading
         do {
-            orders = try await getOrdersUseCase.execute()
+            orders = try await getOrdersUseCase.execute(fromCache: false)
             loadingState = .done
         } catch {
             print(#file, #line, error)

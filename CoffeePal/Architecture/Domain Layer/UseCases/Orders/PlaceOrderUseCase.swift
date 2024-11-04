@@ -10,7 +10,7 @@ import Foundation
 struct PlaceOrderUseCase: Sendable {
     private var orderRepository: any OrderRepositoryProtocol
     
-    init(orderRepository: OrderRepositoryProtocol = OrderRepository()) {
+    init(orderRepository: some OrderRepositoryProtocol = OrderRepository()) {
         self.orderRepository = orderRepository
     }
     

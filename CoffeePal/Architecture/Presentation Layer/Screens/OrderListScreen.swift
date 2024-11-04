@@ -36,8 +36,11 @@ struct OrderListScreen: View {
                     }
                 }
                 Spacer()
-            }.task {
-                await orderAggregate.populateOrders()
+            }
+            .onAppear {
+                Task {
+                    await orderAggregate.fetchOrders()
+                }
             }
             Text(url ?? "none")
             .navigationTitle("Coffee Orders")
