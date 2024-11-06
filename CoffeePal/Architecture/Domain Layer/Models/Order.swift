@@ -29,14 +29,14 @@ import Foundation
      }
 **/
 
-enum CoffeeSize: String {
+enum CoffeeSize: String, CaseIterable {
     case small = "Small"
     case medium = "Medium"
     case large = "Large"
 }
 
 struct Order: Identifiable, Sendable {
-    private(set) var id: Int
+    private(set) var id: Int?
     private(set) var name: String
     private(set) var coffeeName: String
     private(set) var total: Float

@@ -40,4 +40,19 @@ final class OrderAggregate: @unchecked Sendable {
             loadingState = .error
         }
     }
+    
+    func placeOrder(_ order: Order) async {
+        loadingState = .loading
+        do {
+            if let placedOrder = try await placeOrderUseCase.execute(order) {
+                orders.append(placedOrder)
+                loadingState = .done
+            } else {
+                loadingState = .error
+            }
+        } catch {
+            print(#file, #line, error)
+            loadingState = .error
+        }
+    }
 }

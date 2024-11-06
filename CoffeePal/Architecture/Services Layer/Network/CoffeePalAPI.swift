@@ -23,7 +23,7 @@ enum CoffeePalAPIError: Error, LocalizedError {
 
 protocol CoffeePalAPIProtocol {
     func getOrders() async throws -> [OrderDto]
-    func placeOrder(_ orderDto: OrderDto) async throws -> OrderDto
+    func placeOrder(_ orderDto: OrderDto) async throws -> OrderDto?
 }
 
 struct CoffeePalAPI: CoffeePalAPIProtocol {
@@ -36,7 +36,7 @@ struct CoffeePalAPI: CoffeePalAPIProtocol {
         return orderDtos
     }
     
-    func placeOrder(_ orderDto: OrderDto) async throws -> OrderDto {
+    func placeOrder(_ orderDto: OrderDto) async throws -> OrderDto? {
         guard let url = URL(string: Constants.baseURL + Constants.Paths.placeOrderPath) else { throw CoffeePalAPIError.invalidURL }
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
@@ -45,7 +45,7 @@ struct CoffeePalAPI: CoffeePalAPIProtocol {
         let (data, response) = try await URLSession.shared.data(for: request)
         guard let response = response as? HTTPURLResponse,
               (200...299).contains(response.statusCode) else { throw CoffeePalAPIError.badRequest }
-        let placedOrderDto = try JSONDecoder().decode(OrderDto.self, from: data)
+        let placedOrderDto = try? JSONDecoder().decode(OrderDto.self, from: data)
         return placedOrderDto
     }
 }

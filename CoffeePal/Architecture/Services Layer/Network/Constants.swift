@@ -17,7 +17,7 @@ struct Constants {
     
     struct Paths {
         static let getOrdersPath = "/orders"
-        static let placeOrderPath = "/new-order"
+        static let placeOrderPath = "/orders"
         
         private init () {}
     }

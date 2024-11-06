@@ -26,6 +26,8 @@
 		63870C8B2CC131960045A992 /* OrderCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63870C8A2CC131960045A992 /* OrderCellView.swift */; };
 		63870C8D2CC679E60045A992 /* CoffeeAppE2ETests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63870C8C2CC679E60045A992 /* CoffeeAppE2ETests.swift */; };
 		63D326392CAC462E002BF4CB /* OrderAggregate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D326382CAC462E002BF4CB /* OrderAggregate.swift */; };
+		BA06BD9A2CDA3E810004166D /* AddCoffeeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA06BD992CDA3E810004166D /* AddCoffeeScreen.swift */; };
+		BA06BD9D2CDA45120004166D /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA06BD9C2CDA45120004166D /* View+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +74,8 @@
 		63870C8C2CC679E60045A992 /* CoffeeAppE2ETests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeAppE2ETests.swift; sourceTree = "<group>"; };
 		63870C8E2CC682490045A992 /* CoffeePalTestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = CoffeePalTestPlan.xctestplan; sourceTree = "<group>"; };
 		63D326382CAC462E002BF4CB /* OrderAggregate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderAggregate.swift; sourceTree = "<group>"; };
+		BA06BD992CDA3E810004166D /* AddCoffeeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCoffeeScreen.swift; sourceTree = "<group>"; };
+		BA06BD9C2CDA45120004166D /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +174,7 @@
 		630DA0DC2CA6D49A00F33C3F /* Presentation Layer */ = {
 			isa = PBXGroup;
 			children = (
+				BA06BD9B2CDA45040004166D /* Extensions */,
 				630DA0EF2CA6DA7100F33C3F /* CustomViews */,
 				630DA0F02CA6DA8100F33C3F /* Screens */,
 			);
@@ -241,6 +246,7 @@
 			isa = PBXGroup;
 			children = (
 				630DA0B32CA6D47500F33C3F /* OrderListScreen.swift */,
+				BA06BD992CDA3E810004166D /* AddCoffeeScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -305,6 +311,14 @@
 				630DA0B12CA6D47500F33C3F /* CoffeePalApp.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		BA06BD9B2CDA45040004166D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BA06BD9C2CDA45120004166D /* View+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		BA85807B2CD4D7AA00878204 /* AggregateModels */ = {
@@ -446,6 +460,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				630DA1502CA6E92F00F33C3F /* OrderRepository.swift in Sources */,
+				BA06BD9A2CDA3E810004166D /* AddCoffeeScreen.swift in Sources */,
 				630DA16F2CA8384900F33C3F /* Constants.swift in Sources */,
 				630DA1512CA6E92F00F33C3F /* OrderDto.swift in Sources */,
 				630DA1522CA6E92F00F33C3F /* Order.swift in Sources */,
@@ -457,6 +472,7 @@
 				630DA1572CA6E92F00F33C3F /* CoffeePalAPI.swift in Sources */,
 				630DA1472CA6E61F00F33C3F /* OrderListScreen.swift in Sources */,
 				630DA14C2CA6E6A900F33C3F /* CoffeePalApp.swift in Sources */,
+				BA06BD9D2CDA45120004166D /* View+Extensions.swift in Sources */,
 				63870C8B2CC131960045A992 /* OrderCellView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

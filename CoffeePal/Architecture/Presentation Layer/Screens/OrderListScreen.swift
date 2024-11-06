@@ -9,6 +9,7 @@ import SwiftUI
 
 struct OrderListScreen: View {
     @Environment(OrderAggregate.self) private var orderAggregate
+    @State private var showAddOrderScreen: Bool = false
     @State private var url =
         Bundle.main.object(forInfoDictionaryKey: "API_URL") as? String
 
@@ -37,6 +38,12 @@ struct OrderListScreen: View {
                 }
                 Spacer()
             }
+            .navigationBarItems(trailing: Button("Add Order") {
+                showAddOrderScreen.toggle()
+                
+            }.sheet(isPresented: $showAddOrderScreen, content: {
+                AddCoffeeScreen.init()
+            }))
             .onAppear {
                 Task {
                     await orderAggregate.fetchOrders()
